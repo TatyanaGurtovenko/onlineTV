@@ -1,0 +1,42 @@
+.movies {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  &__item {
+    box-shadow: 0px 0px 20px rgba(44, 176, 249, 0.0);
+    transition: .2s ease box-shadow;
+    border-radius: 2rem;
+    flex: 0 0 14%;
+    list-style-type: none;
+    &:hover {
+      box-shadow: 0px 0px 20px rgba(44, 176, 249, 0.5);
+    }
+    @media (max-width: 991px) {
+      flex-basis: 32%;
+    }
+    @media (max-width: 768px) {
+      flex-basis: 50%;
+    }
+  }
+  &__link {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 30.9rem;
+    display: block;
+    border-radius: 2rem;
+  }
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    width: 100%;
+  }
+}
+

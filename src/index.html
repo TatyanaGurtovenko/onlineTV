@@ -2,6 +2,7 @@
 <html lang="ru">
   <head> 
     <title>Online TV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
        /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -351,681 +352,189 @@ template {
 
 [hidden] {
   display: none;
-}@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Mulish:wght@400;600;700;800&display=swap");
-html {
-  font-size: 10px;
-}
+}@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Mulish:wght@400;600;700;800&display=swap");.section-banner{border-bottom:0.1rem solid #2F2E2E;position:relative;overflow:hidden}.section-banner__img{position:absolute;right:0;z-index:-1;height:100%}.banner{max-width:56.2rem;padding-top:12.2rem;padding-bottom:20.3rem;background-color:#000;box-shadow:100px 0px 100px #000}.banner__title{font-family:'Marcellus', serif;font-size:8rem;line-height:7.5rem;color:#fff}.banner__text{color:#C2C2C2;font-size:1.8rem;line-height:1.6}.banner-info{font-weight:800;margin-bottom:2.9rem}.banner-info__year{margin-right:1.8rem}.banner-info__age{margin-right:1.8rem;position:relative;width:6rem;display:inline-block;text-align:center}.banner-info__age::before{content:'';display:block;width:100%;height:2.4rem;background-image:url(img/age.svg);background-repeat:no-repeat;background-size:cover;position:absolute;top:calc(50% - 1.2rem);left:0;right:0}.banner-info__time{margin-right:6rem}.banner-info__rating{position:relative}.banner-info__rating::after{content:'';display:block;width:1.6rem;height:1.6rem;margin-left:1rem;position:absolute;top:calc(50% - .8rem);right:-2.6rem;background-image:url(img/star.svg)}.banner-control{margin-top:3.1rem}.banner-control__btn{border:none;border-radius:10rem;padding:1.5rem 3rem;font-family:'Mulish', sans-serif;font-weight:800}.banner-control__btn-main{background:#326cff;background:linear-gradient(159deg, #326cff 0%, #26fff2 100%);color:#fff;position:relative;margin-right:3rem;padding-left:6rem;cursor:pointer;box-shadow:0px 4px 50px rgba(50,108,255,0.5);transition:.2s ease box-shadow}.banner-control__btn-main:hover{box-shadow:0px 0px 0px rgba(50,108,255,0.5)}.banner-control__btn-main::after{content:'';display:block;width:1.4rem;height:1.8rem;background-image:url(img/play.svg);position:absolute;left:3rem;top:calc(50% - 0.9rem)}.banner-control__btn-more{background-color:#fff;color:#323232;transition:.2s ease background-color, .2s ease color;cursor:pointer}.banner-control__btn-more:hover{color:#fff;background-color:transparent}.burger{display:none;top:2.5rem;right:1.875rem;cursor:pointer;z-index:11;width:4.375rem;height:2.375rem}.burger__content{position:relative;width:100%;height:100%;display:flex;align-items:center}.burger__content:before{border-radius:0.1875rem;display:block;content:"";position:absolute;top:0;left:0;width:100%;height:4px;background-color:#fff;transition:0.3s}.burger__content:after{border-radius:0.1875rem;display:block;content:"";position:absolute;bottom:0;left:0;width:100%;height:4px;background-color:#fff;transition:0.3s}.burger__line{border-radius:0.1875rem;width:100%;height:4px;background-color:#fff}.burger.active .burger__line{opacity:0}.burger.active .burger__content:before{transform:rotate(45deg);top:0.625rem}.burger.active .burger__content:after{transform:rotate(-45deg);top:0.625rem}@media screen and (max-width: 768px){.burger{display:block}}footer{background-color:#101012;padding:7rem 0 5rem}.footer__list{display:flex;justify-content:space-between;align-items:center;max-width:144rem;margin:0 auto;padding:1.5rem 1.5rem 1.5rem 1.5rem}.footer__item{list-style-type:none}.footer__nav-item{list-style-type:none;padding-left:0;margin:0}@media (max-width: 991px){.footer__nav-item{flex-basis:48%}}@media (max-width: 480px){.footer__nav-item{flex-basis:100%}}.footer__nav-list{margin-bottom:2rem}.footer__nav-link{font-size:1.8rem;color:#C2C2C2;text-decoration:none;font-weight:600;transition:0.2s ease color;line-height:2}.footer__nav-link:hover{color:#fff}.header{display:flex;justify-content:space-between;align-items:center;max-width:144rem;margin:0 auto;padding:1.5rem 1.5rem 1.5rem 1.5rem}@media (max-width: 768px){nav{display:none}}nav.active{display:block;margin-bottom:40px}nav.active .nav__list{flex-direction:column}nav.active .nav__item{margin-bottom:40px;text-align:center;margin-right:0}nav.active .nav__item:last-child{margin-bottom:0}nav.active .nav__link{font-size:35px}.nav__list{display:flex;list-style:none;padding-left:0}.nav__item{margin:0 2.5rem}.nav__link{text-decoration:none;font-weight:700;color:rgba(255,255,255,0.5);transition:0.2s ease color}.nav__link:hover{color:#fff}.nav__link::after{content:'';opacity:0;display:block;width:100%;height:.2rem;border-radius:5rem;background:#326cff;background:linear-gradient(159deg, #326cff 0%, #26fff2 100%)}.nav__link.active{color:#fff}.nav__link.active::after{opacity:1}.actors__list{display:flex;align-items:center;flex-wrap:wrap;justify-content:space-between;text-align:center;margin-top:2.1rem;padding:0}@media (max-width: 485px){.actors__list{justify-content:center}}.actors__item{flex:0 0 14%;list-style-type:none}@media (max-width: 485px){.actors__item{flex:0 0 51%}}.actors__link{overflow:hidden;position:relative;width:19rem;height:19rem;display:block;border-radius:2rem}.actors__img{border-radius:50%;position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);object-fit:cover;width:19rem;height:19rem}.movies__list{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:0}.movies__item{box-shadow:0px 0px 20px rgba(44,176,249,0);transition:.2s ease box-shadow;border-radius:2rem;flex:0 0 14%;list-style-type:none}.movies__item:hover{box-shadow:0px 0px 20px rgba(44,176,249,0.5)}@media (max-width: 991px){.movies__item{flex-basis:32%}}@media (max-width: 768px){.movies__item{flex-basis:50%}}.movies__link{overflow:hidden;position:relative;width:100%;height:30.9rem;display:block;border-radius:2rem}.movies__img{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);object-fit:cover;width:100%}.marketing{display:flex;align-items:center;justify-content:space-between;text-align:center;margin-top:2.1rem}@media (max-width: 768px){.marketing{flex-direction:column}}.marketing__item{flex:0 0 50%;border-radius:2rem}@media (max-width: 768px){.marketing__item{width:100%;flex:none}}.marketing__link{overflow:hidden;position:relative;width:100%;height:34.1rem;display:block}@media (max-width: 768px){.marketing__link{height:19rem}}.marketing__img{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);object-fit:cover;width:100%}.genres__list{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;text-align:center;margin-top:2.1rem;padding:0}.genres__item{top:4.8rem;flex:0 0 24%;border-radius:2rem;margin-bottom:2.7rem;cursor:pointer;list-style-type:none;padding:35px 0}@media (max-width: 991px){.genres__item{flex-basis:48%}}@media (max-width: 480px){.genres__item{flex-basis:100%}}.genres__item-romance{background:linear-gradient(109.31deg, #FD093F 2.4%, #F383F1 100%)}.genres__item-romance:hover{background:linear-gradient(45deg, #b652ae, #d4d4d4)}.genres__item-drama{background:linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%)}.genres__item-drama:hover{background:linear-gradient(45deg, #d4f2d7, #38b25c)}.genres__item-historical{background:linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%)}.genres__item-historical:hover{background:linear-gradient(45deg, #c9c5ca, #a593f4)}.genres__item-action{background:linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%)}.genres__item-action:hover{background:linear-gradient(45deg, #d6583d, #eed77c)}.genres__item-sci-fi{background:linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%)}.genres__item-sci-fi:hover{background:linear-gradient(45deg, #d4b3ab, #ddc877)}.genres__item-horror{background:linear-gradient(110.16deg, #13547A 2.37%, #80D0C7 96.77%)}.genres__item-horror:hover{background:linear-gradient(45deg, #3f4a9c, #7ccbee)}.genres__item-comedy{background:linear-gradient(109.93deg, #FFF77B 2.37%, #FFBF42 50%)}.genres__item-comedy:hover{background:linear-gradient(45deg, #96a700, #e6eac4)}.genres__item-documentary{background:linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%)}.genres__item-documentary:hover{background:linear-gradient(45deg, #9fc5ca, #6971d6)}.genres-icon{height:8rem;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}.genres__image{transform:stranslate(-50%, -50%);object-fit:cover}.genres__title{font-size:2.8rem;font-weight:700;margin:0}html{font-size:10px}body{background-color:#000;color:#fff;font-size:16px;font-family:'Mulish', sans-serif}.wrapper{margin:0 auto;width:100%;height:100%;overflow:hidden}button:focus{outline:none}.container{max-width:144rem;padding-left:1.5rem;padding-right:1.5rem;margin:0 auto;position:relative;height:100%}.control__list{display:flex;align-items:center;list-style:none;padding-left:0}@media (max-width: 768px){.control__list{display:none}}.control__item{margin-left:7.5rem}.control__btn{background-color:transparent;border:none;display:block;background-size:cover;background-repeat:no-repeat;cursor:pointer}.control__btn-search{background-image:url(img/search.svg);width:1.8rem;height:1.8rem}.control__btn-notice{background-image:url(img/notice.svg);width:2.13rem;height:2.35rem}.control__btn-account{background-image:url(img/account.svg);width:1.8rem;height:1.92rem}.section{padding-top:5rem}.section__h2{font-size:2.8rem;line-height:2rem;position:relative;padding-left:2rem;font-weight:700}.section__h2::before{content:'';display:block;width:.8rem;height:3.5rem;border-radius:5rem;background:#326cff;background:linear-gradient(159deg, #326cff 0%, #26fff2 100%);position:absolute;left:0;top:calc(50% - 1.7rem)}.section__h2-link{color:#fff;text-decoration:none}.section__btn{margin-top:5.5rem;border:none;border-radius:10rem;padding:1.5rem 3rem;font-family:'Mulish', sans-serif;font-weight:800;background:#326cff;background:linear-gradient(159deg, #326cff 0%, #26fff2 100%);color:#fff;cursor:pointer;box-shadow:0px 4px 50px rgba(50,108,255,0.5);transition:.2s ease box-shadow}.section__btn:hover{box-shadow:0px 0px 0px rgba(50,108,255,0.5)}.section-banner{border-bottom:0.1rem solid #2F2E2E;position:relative;overflow:hidden}.section-banner__img{position:absolute;right:0;z-index:-1;height:100%}.offer{max-width:122.4rem;margin:0 auto;display:flex;align-items:center;justify-content:space-between;background-image:url("img/offer.png");padding:7.2rem 14.7rem 7.2rem 5.7rem;background-size:cover;background-repeat:no-repeat;border-radius:2rem;margin-top:7rem;margin-bottom:12.1rem;box-sizing:border-box}@media (max-width: 768px){.offer{margin:0;padding:3rem 4rem 3rem 3.7rem;flex-wrap:wrap}}.offer__title{font-size:6.4rem;font-weight:700;max-width:80rem;margin:0;line-height:1;flex-grow:1;margin-right:2rem}@media (max-width: 768px){.offer__title{font-size:3.4rem;margin-bottom:2rem;margin-right:0}}@media (max-width: 480px){.offer__title{font-size:2rem}}.offer__btn{border:none;border-radius:10rem;padding:1.5rem 3rem;font-family:'Mulish', sans-serif;font-weight:800;background:#326cff;background:linear-gradient(159deg, #326cff 0%, #26fff2 100%);color:#fff;cursor:pointer;box-shadow:0px 4px 50px rgba(50,108,255,0.5);transition:.2s ease box-shadow}.offer__btn:hover{box-shadow:0px 0px 0px rgba(50,108,255,0.5)}
 
-body {
-  background-color: #000;
-  color: #fff;
-  font-size: 16px;
-  font-family: "Mulish", sans-serif;
-}
-
-button:focus {
-  outline: none;
-}
-
-.container {
-  max-width: 144rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  margin: 0 auto;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 144rem;
-  margin: 0 auto;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-}
-
-.nav {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-}
-.nav-item {
-  margin: 0 2.5rem;
-}
-.nav-link {
-  text-decoration: none;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
-  transition: 0.2s ease color;
-}
-.nav-link:hover {
-  color: white;
-}
-.nav-link::after {
-  content: "";
-  opacity: 0;
-  display: block;
-  width: 100%;
-  height: 0.2rem;
-  border-radius: 5rem;
-  background: #326cff;
-  background: linear-gradient(159deg, #326cff 0%, #26fff2 100%);
-}
-.nav-link.active {
-  color: white;
-}
-.nav-link.active::after {
-  opacity: 1;
-}
-
-.control {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding-left: 0;
-}
-.control-item {
-  margin-left: 7.5rem;
-}
-.control-btn {
-  background-color: transparent;
-  border: none;
-  display: block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-.control-btn_search {
-  background-image: url(img/search.svg);
-  width: 1.8rem;
-  height: 1.8rem;
-}
-.control-btn_notice {
-  background-image: url(img/notice.svg);
-  width: 2.13rem;
-  height: 2.35rem;
-}
-.control-btn_account {
-  background-image: url(img/account.svg);
-  width: 1.8rem;
-  height: 1.92rem;
-}
-
-.section {
-  padding-top: 5rem;
-}
-.section__h2 {
-  font-size: 2.8rem;
-  line-height: 2rem;
-  position: relative;
-  padding-left: 2rem;
-  font-weight: 700;
-}
-.section__h2::before {
-  content: "";
-  display: block;
-  width: 0.8rem;
-  height: 3.5rem;
-  border-radius: 5rem;
-  background: #326cff;
-  background: linear-gradient(159deg, #326cff 0%, #26fff2 100%);
-  position: absolute;
-  left: 0;
-  top: calc(50% - 1.7rem);
-}
-.section__h2-link {
-  color: #fff;
-  text-decoration: none;
-}
-.section__btn {
-  margin-top: 5.5rem;
-  border: none;
-  border-radius: 10rem;
-  padding: 1.5rem 3rem;
-  font-family: "Mulish", sans-serif;
-  font-weight: 800;
-  background: #326cff;
-  background: linear-gradient(159deg, #326cff 0%, #26fff2 100%);
-  color: #fff;
-  cursor: pointer;
-  box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
-  transition: 0.2s ease box-shadow;
-}
-.section__btn:hover {
-  box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
-}
-.section__btn::after {
-  content: "";
-  display: block;
-  width: 1.4rem;
-  height: 1.8rem;
-  background-image: url(img/play.svg);
-  position: absolute;
-  left: 3rem;
-  top: calc(50% - 0.9rem);
-}
-
-.section-banner {
-  border-bottom: 0.1rem solid #2F2E2E;
-  position: relative;
-  overflow: hidden;
-}
-.section-banner__img {
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-}
-
-.banner {
-  max-width: 56.2rem;
-  padding-top: 12.2rem;
-  padding-bottom: 20.3rem;
-  background-color: #000;
-  box-shadow: 100px 0px 100px #000;
-}
-.banner__title {
-  font-family: "Marcellus", serif;
-  font-size: 8rem;
-  line-height: 7.5rem;
-}
-.banner__text {
-  color: #C2C2C2;
-  font-size: 1.8rem;
-  line-height: 1.6;
-}
-.banner-info {
-  font-weight: 800;
-  margin-bottom: 2.9rem;
-}
-.banner-info__year {
-  margin-right: 1.8rem;
-}
-.banner-info__age {
-  margin-right: 1.8rem;
-  position: relative;
-  width: 6rem;
-  display: inline-block;
-  text-align: center;
-}
-.banner-info__age::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2.4rem;
-  background-image: url(img/age.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: calc(50% - 1.2rem);
-  left: 0;
-  right: 0;
-}
-.banner-info__time {
-  margin-right: 6rem;
-}
-.banner-info__rating {
-  position: relative;
-}
-.banner-info__rating::after {
-  content: "";
-  display: block;
-  width: 1.6rem;
-  height: 1.6rem;
-  margin-left: 1rem;
-  position: absolute;
-  top: calc(50% - .8rem);
-  right: -2.6rem;
-  background-image: url(img/star.svg);
-}
-.banner-control {
-  margin-top: 3.1rem;
-}
-.banner-control__btn {
-  border: none;
-  border-radius: 10rem;
-  padding: 1.5rem 3rem;
-  font-family: "Mulish", sans-serif;
-  font-weight: 800;
-}
-.banner-control__btn-main {
-  background: #326cff;
-  background: linear-gradient(159deg, #326cff 0%, #26fff2 100%);
-  color: #fff;
-  position: relative;
-  margin-right: 3rem;
-  padding-left: 6rem;
-  cursor: pointer;
-  box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
-  transition: 0.2s ease box-shadow;
-}
-.banner-control__btn-main:hover {
-  box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
-}
-.banner-control__btn-main::after {
-  content: "";
-  display: block;
-  width: 1.4rem;
-  height: 1.8rem;
-  background-image: url(img/play.svg);
-  position: absolute;
-  left: 3rem;
-  top: calc(50% - 0.9rem);
-}
-.banner-control__btn-more {
-  background-color: #fff;
-  color: #323232;
-  transition: 0.2s ease background-color, 0.2s ease color;
-  cursor: pointer;
-}
-.banner-control__btn-more:hover {
-  color: #fff;
-  background-color: transparent;
-}
-
-.movies {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.movies-item {
-  box-shadow: 0px 0px 20px rgba(44, 176, 249, 0);
-  transition: 0.2s ease box-shadow;
-  border-radius: 2rem;
-  flex: 0 0 14%;
-}
-.movies-item:hover {
-  box-shadow: 0px 0px 20px rgba(44, 176, 249, 0.5);
-}
-.movies__link {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 30.9rem;
-  display: block;
-  border-radius: 2rem;
-}
-.movies__img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-}
-
-.genres {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  text-align: center;
-  margin-top: 2.1rem;
-}
-.genres-item {
-  padding: 4.8rem 1rem 3.4rem;
-  top: 4.8rem;
-  flex: 0 0 24%;
-  border-radius: 2rem;
-  box-sizing: border-box;
-  margin-bottom: 2.7rem;
-  cursor: pointer;
-}
-.genres-item_romance {
-  background: linear-gradient(109.31deg, #FD093F 2.4%, #F383F1 100%);
-}
-.genres-item_drama {
-  background: linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);
-}
-.genres-item_historical {
-  background: linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%);
-}
-.genres-item_action {
-  background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
-}
-.genres-item_sci-fi {
-  background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);
-}
-.genres-item_horror {
-  background: linear-gradient(110.16deg, #13547A 2.37%, #80D0C7 96.77%);
-}
-.genres-item_comedy {
-  background: linear-gradient(109.93deg, #FFF77B 2.37%, #FFBF42 50%);
-}
-.genres-item_documentary {
-  background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
-}
-.genres-item-icon {
-  height: 8rem;
-  position: relative;
-  overflow: hidden;
-}
-.genres-item__image {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-}
-.genres-item__title {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-top: 0.2rem 0 0 0;
-}
-
-.actors {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  margin-top: 2.1rem;
-}
-.actors-item {
-  flex: 0 0 14%;
-}
-.actors__link {
-  overflow: hidden;
-  position: relative;
-  width: 19rem;
-  height: 19rem;
-  display: block;
-  border-radius: 2rem;
-}
-.actors__img {
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  width: 19rem;
-  height: 19rem;
-}
-
-.marketing {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  margin-top: 2.1rem;
-}
-.marketing-item {
-  flex: 0 0 50%;
-  border-radius: 2rem;
-}
-.marketing-item:first-child .marketing__link {
-  border-radius: 2rem 0 0 2rem;
-}
-.marketing-item:last-child .marketing__link {
-  border-radius: 0 2rem 2rem 0;
-}
-.marketing__link {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 34.1rem;
-  display: block;
-}
-.marketing__img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-}
-
-.offer {
-  max-width: 122.4rem;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-image: url("img/offer.png");
-  padding: 7.2rem 14.7rem 7.2rem 5.7rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2rem;
-  margin-top: 7rem;
-  margin-bottom: 12.1rem;
-  box-sizing: border-box;
-}
-.offer__title {
-  font-size: 6.4rem;
-  font-weight: 700;
-  max-width: 80rem;
-  margin: 0;
-  line-height: 1;
-  flex-grow: 1;
-  margin-right: 2rem;
-}
-.offer__btn {
-  border: none;
-  border-radius: 10rem;
-  padding: 1.5rem 3rem;
-  font-family: "Mulish", sans-serif;
-  font-weight: 800;
-  background: #326cff;
-  background: linear-gradient(159deg, #326cff 0%, #26fff2 100%);
-  color: #fff;
-  cursor: pointer;
-  box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
-  transition: 0.2s ease box-shadow;
-}
-.offer__btn:hover {
-  box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
-}
-.offer__btn::after {
-  content: "";
-  display: block;
-  width: 1.4rem;
-  height: 1.8rem;
-  background-image: url(img/play.svg);
-  position: absolute;
-  left: 3rem;
-  top: calc(50% - 0.9rem);
-}
-
-footer {
-  background-color: #101012;
-  padding: 7rem 0 5rem;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 144rem;
-  margin: 0 auto;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-}
-.footer-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-.footer-list-item {
-  margin-bottom: 2rem;
-}
-.footer-list__link {
-  font-size: 1.8rem;
-  color: #C2C2C2;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.2s ease color;
-}
-.footer-list__link:hover {
-  color: #fff;
-}
     </style>
   </head>
   <body>
-    <header> 
-      <div class="header"><a href="#"><img src="img/logo.svg" alt="logo"></a>
-        <nav>  
-          <ul class="nav"> 
-            <li class="nav-item"> <a class="nav-link active" href="#">Home </a></li>
-            <li class="nav-item"> <a class="nav-link" href="#">TV Show </a></li>
-            <li class="nav-item"> <a class="nav-link" href="#">Movies         </a></li>
-            <li class="nav-item"> <a class="nav-link" href="#">Series</a></li>
+    <div class="wrapper">
+      <div class="main-content">
+        <header> 
+          <div class="header"><a href="#"><img src="img/logo.svg" alt="logo"></a>
+            <nav>  
+              <ul class="nav__list"> 
+                <li class="nav__item"> <a class="nav__link active" href="#">Home </a></li>
+                <li class="nav__item"> <a class="nav__link" href="#">TV Show </a></li>
+                <li class="nav__item"> <a class="nav__link" href="#">Movies         </a></li>
+                <li class="nav__item"> <a class="nav__link" href="#">Series</a></li>
+              </ul>
+            </nav>
+            <ul class="control__list">
+              <li class="control__item"> 
+                <button class="control__btn control__btn-search"></button>
+              </li>
+              <li class="control__item"> 
+                <button class="control__btn control__btn-notice"></button>
+              </li>
+              <li class="control__item"> 
+                <button class="control__btn control__btn-account"></button>
+              </li>
+            </ul>
+            <div class="burger"> 
+              <div class="burger__content">
+                <div class="burger__line"> </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="section-banner">
+          <div class="container"> <img class="section-banner__img" src="./img/banner.png" alt="banner">
+            <div class="banner">
+              <h1 class="banner__title">Zack Snyder's Justice League</h1>
+              <div class="banner-info"> <span class="banner-info__year">2021</span><span class="banner-info__age">18+</span><span class="banner-info__time">4h 2min</span><span class="banner-info__rating">8.8</span></div>
+              <p class="banner__text">Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.</p>
+              <div class="banner-control"> 
+                <button class="banner-control__btn banner-control__btn-main">Watch</button>
+                <button class="banner-control__btn banner-control__btn-more">More information</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section"> 
+          <div class="container">    
+            <h2 class="section__h2"> <a class="section__h2-link" href="#">Trending TV Shows </a></h2>
+            <ul class="movies__list"> 
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters01.png" alt=""></a></li>
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters02.png" alt=""></a></li>
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters03.png" alt=""></a></li>
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters04.png" alt=""></a></li>
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters05.png" alt=""></a></li>
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters06.png" alt=""></a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="section"> 
+          <div class="container">    
+            <h2 class="section__h2"> <a class="section__h2-link" href="#">Trending Movies</a></h2>
+            <ul class="movies__list"> 
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters11.png" alt=""></a></li>
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters12.png" alt=""></a></li>
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters13.png" alt=""></a></li>
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters14.png" alt=""></a></li>
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters15.png" alt=""></a></li>
+              <li class="movies__item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters16.png" alt=""></a></li>
+            </ul>
+            <button class="section__btn">See more</button>
+          </div>
+        </section>
+        <section class="section"> 
+          <div class="container">    
+            <h2 class="section__h2"> <a class="section__h2-link" href="#">Popular Genres</a></h2>
+            <ul class="genres__list"> 
+              <li class="genres__item genres__item-romance">
+                <div class="genres-icon"><img class="genres__image" src="../src/img/genres/romance.svg" alt=""></div>
+                <h3 class="genres__title">Romance</h3>
+              </li>
+              <li class="genres__item genres__item-drama">
+                <div class="genres-icon"><img class="genres__image" src="../src/img/genres/drama.svg" alt=""></div>
+                <h3 class="genres__title">Drama</h3>
+              </li>
+              <li class="genres__item genres__item-historical">
+                <div class="genres-icon"><img class="genres__image" src="../src/img/genres/historical.svg" alt=""></div>
+                <h3 class="genres__title">Historical</h3>
+              </li>
+              <li class="genres__item genres__item-action">
+                <div class="genres-icon"><img class="genres__image" src="../src/img/genres/action.svg" alt=""></div>
+                <h3 class="genres__title">Action</h3>
+              </li>
+              <li class="genres__item genres__item-sci-fi">
+                <div class="genres-icon"><img class="genres__image" src="../src/img/genres/sci-fi.svg" alt=""></div>
+                <h3 class="genres__title">Sci-fi</h3>
+              </li>
+              <li class="genres__item genres__item-horror">
+                <div class="genres-icon"><img class="genres__image" src="../src/img/genres/horror.svg" alt=""></div>
+                <h3 class="genres__title">Horror</h3>
+              </li>
+              <li class="genres__item genres__item-comedy">
+                <div class="genres-icon"><img class="genres__image" src="../src/img/genres/comedy.svg" alt=""></div>
+                <h3 class="genres__title">Comedy</h3>
+              </li>
+              <li class="genres__item genres__item-documentary">
+                <div class="genres-icon"><img class="genres__image" src="../src/img/genres/documentary.svg" alt=""></div>
+                <h3 class="genres__title">Documentary</h3>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section"> 
+          <div class="container">    
+            <h2 class="section__h2"> <a class="section__h2-link" href="#">Popular Actors & Directors</a></h2>
+            <ul class="actors__list">
+              <li class="actors__item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/1.png" alt=""></a>
+                <h3 class="actors__title">Samantha Bowen</h3>
+              </li>
+              <li class="actors__item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/2.png" alt=""></a>
+                <h3 class="actors__title">Rhys Birch</h3>
+              </li>
+              <li class="actors__item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/3.png" alt=""></a>
+                <h3 class="actors__title">James Holloway</h3>
+              </li>
+              <li class="actors__item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/4.png" alt=""></a>
+                <h3 class="actors__title">Joshua Walton</h3>
+              </li>
+              <li class="actors__item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/5.png" alt=""></a>
+                <h3 class="actors__title">Patrick Elliott</h3>
+              </li>
+              <li class="actors__item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/6.png" alt=""></a>
+                <h3 class="actors__title">Morgan O'Neill</h3>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section"> 
+          <div class="container">
+            <div class="marketing"> 
+              <div class="marketing__item"> <a class="marketing__link" href=""> <img class="marketing__img" src="../src/img/marketing/marketing1.png" alt=""></a></div>
+              <div class="marketing__item"><a class="marketing__link" href=""> <img class="marketing__img" src="../src/img/marketing/marketing2.png" alt=""></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="section"> 
+          <div class="container">
+            <div class="offer"> 
+              <h2 class="offer__title">Are You New Here ? Don’t&nbspwait, Register Now. </h2>
+              <button class="offer__btn">Register Now</button>
+            </div>
+          </div>
+        </section>
+        <footer> 
+          <ul class="footer__list">
+            <li class="footer__item"> <a href="#"><img src="img/logo.svg" alt="logo"></a></li>
+            <li class="footer__item"> 
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Voice over and Subtitle</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Media Center </a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Privacy </a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Contact us</a></li>
+              </ul>
+            </li>
+            <li class="footer__item"> 
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Voice Description</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Investor Relations </a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Legal Provisions</a></li>
+              </ul>
+            </li>
+            <li class="footer__item"> 
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Help Center</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Job Opportunities </a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Cookies Preferences</a></li>
+              </ul>
+            </li>
           </ul>
-        </nav>
-        <ul class="control">
-          <li class="control-item"> 
-            <button class="control-btn control-btn_search"></button>
-          </li>
-          <li class="control-item"> 
-            <button class="control-btn control-btn_notice"></button>
-          </li>
-          <li class="control-item"> 
-            <button class="control-btn control-btn_account"></button>
-          </li>
-        </ul>
+        </footer>
       </div>
-    </header>
-    <section class="section-banner"><img class="section-banner__img" src="./img/banner.png" alt="banner">
-      <div class="container"> 
-        <div class="banner">
-          <h1 class="banner__title">Zack Snyder's Justice League</h1>
-          <div class="banner-info"> <span class="banner-info__year">2021</span><span class="banner-info__age">18+</span><span class="banner-info__time">4h 2min</span><span class="banner-info__rating">8.8</span></div>
-          <p class="banner__text">Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.</p>
-          <div class="banner-control"> 
-            <button class="banner-control__btn banner-control__btn-main">Watch</button>
-            <button class="banner-control__btn banner-control__btn-more">More information</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section"> 
-      <div class="container">    
-        <h2 class="section__h2"> <a class="section__h2-link" href="#">Trending TV Shows </a></h2>
-        <div class="movies"> 
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters01.png" alt=""></a></div>
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters02.png" alt=""></a></div>
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters03.png" alt=""></a></div>
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters04.png" alt=""></a></div>
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters05.png" alt=""></a></div>
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters/posters06.png" alt=""></a></div>
-        </div>
-      </div>
-    </section>
-    <section class="section"> 
-      <div class="container">    
-        <h2 class="section__h2"> <a class="section__h2-link" href="#">Trending Movies</a></h2>
-        <div class="movies"> 
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters11.png" alt=""></a></div>
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters12.png" alt=""></a></div>
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters13.png" alt=""></a></div>
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters14.png" alt=""></a></div>
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters15.png" alt=""></a></div>
-          <div class="movies-item"> <a class="movies__link" href=""><img class="movies__img" src="../src/img/posters2/posters16.png" alt=""></a></div>
-        </div>
-        <button class="section__btn">See more</button>
-      </div>
-    </section>
-    <section class="section"> 
-      <div class="container">    
-        <h2 class="section__h2"> <a class="section__h2-link" href="#">Popular Genres</a></h2>
-        <div class="genres"> 
-          <div class="genres-item genres-item_romance">
-            <div class="genres-icon"><img class="genres__image" src="../src/img/genres/romance.svg" alt=""></div>
-            <h3 class="genres__title">Romance</h3>
-          </div>
-          <div class="genres-item genres-item_drama">
-            <div class="genres-icon"><img class="genres__image" src="../src/img/genres/drama.svg" alt=""></div>
-            <h3 class="genres__title">Drama</h3>
-          </div>
-          <div class="genres-item genres-item_historical">
-            <div class="genres-icon"><img class="genres__image" src="../src/img/genres/historical.svg" alt=""></div>
-            <h3 class="genres__title">Historical</h3>
-          </div>
-          <div class="genres-item genres-item_action">
-            <div class="genres-icon"><img class="genres__image" src="../src/img/genres/action.svg" alt=""></div>
-            <h3 class="genres__title">Action</h3>
-          </div>
-          <div class="genres-item genres-item_sci-fi">
-            <div class="genres-icon"><img class="genres__image" src="../src/img/genres/sci-fi.svg" alt=""></div>
-            <h3 class="genres__title">Sci-fi</h3>
-          </div>
-          <div class="genres-item genres-item_horror">
-            <div class="genres-icon"><img class="genres__image" src="../src/img/genres/horror.svg" alt=""></div>
-            <h3 class="genres__title">Horror</h3>
-          </div>
-          <div class="genres-item genres-item_comedy">
-            <div class="genres-icon"><img class="genres__image" src="../src/img/genres/comedy.svg" alt=""></div>
-            <h3 class="genres__title">Comedy</h3>
-          </div>
-          <div class="genres-item genres-item_documentary">
-            <div class="genres-icon"><img class="genres__image" src="../src/img/genres/documentary.svg" alt=""></div>
-            <h3 class="genres__title">Documentary</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section"> 
-      <div class="container">    
-        <h2 class="section__h2"> <a class="section__h2-link" href="#">Popular Actors & Directors</a></h2>
-        <div class="actors">
-          <div class="actors-item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/1.png" alt=""></a>
-            <h3 class="actors__title">Samantha Bowen</h3>
-          </div>
-          <div class="actors-item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/2.png" alt=""></a>
-            <h3 class="actors__title">Rhys Birch</h3>
-          </div>
-          <div class="actors-item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/3.png" alt=""></a>
-            <h3 class="actors__title">James Holloway</h3>
-          </div>
-          <div class="actors-item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/4.png" alt=""></a>
-            <h3 class="actors__title">Joshua Walton</h3>
-          </div>
-          <div class="actors-item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/5.png" alt=""></a>
-            <h3 class="actors__title">Patrick Elliott</h3>
-          </div>
-          <div class="actors-item"><a class="actors__link" href=""><img class="actors__img" src="../src/img/actors/6.png" alt=""></a>
-            <h3 class="actors__title">Morgan O'Neill</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section"> 
-      <div class="container">
-        <div class="marketing"> 
-          <div class="marketing-item"> <a class="marketing__link" href=""> <img class="marketing__img" src="../src/img/marketing/marketing1.png" alt=""></a></div>
-          <div class="marketing-item"><a class="marketing__link" href=""> <img class="marketing__img" src="../src/img/marketing/marketing2.png" alt=""></a></div>
-        </div>
-      </div>
-    </section>
-    <section class="section"> 
-      <div class="container">
-        <div class="offer"> 
-          <h2 class="offer__title">Are You New Here ? Don’t&nbspwait, Register Now. </h2>
-          <button class="offer__btn">Register Now</button>
-        </div>
-      </div>
-    </section>
-    <footer> 
-      <div class="footer">
-        <div class="footer-item"> <a href="#"><img src="img/logo.svg" alt="logo"></a></div>
-        <div class="footer-item"> 
-          <ul class="footer-list">
-            <li class="footer-list__item"><a class="footer-list__link" href="#">Voice over and Subtitle</a></li>
-            <li class="footer-list__item"><a class="footer-list__link" href="#">Media Center </a></li>
-            <li class="footer-list__item"><a class="footer-list__link" href="#">Privacy </a></li>
-            <li class="footer-list__item"><a class="footer-list__link" href="#">Contact us</a></li>
-          </ul>
-        </div>
-        <div class="footer-item"> 
-          <ul class="footer-list">
-            <li class="footer-list__item"><a class="footer-list__link" href="#">Voice Description</a></li>
-            <li class="footer-list__item"><a class="footer-list__link" href="#">Investor Relations </a></li>
-            <li class="footer-list__item"><a class="footer-list__link" href="#">Legal Provisions</a></li>
-          </ul>
-        </div>
-        <div class="footer-item"> 
-          <ul class="footer-list">
-            <li class="footer-list__item"><a class="footer-list__link" href="#">Help Center</a></li>
-            <li class="footer-list__item"><a class="footer-list__link" href="#">Job Opportunities </a></li>
-            <li class="footer-list__item"><a class="footer-list__link" href="#">Cookies Preferences</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    </div>
   </body>
 </html>

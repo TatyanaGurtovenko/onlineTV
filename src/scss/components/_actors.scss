@@ -1,0 +1,39 @@
+.actors {
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2.1rem;
+    padding: 0;
+    @media (max-width: 485px) {
+      justify-content: center;
+    }
+  }
+  &__item {
+    flex: 0 0 14%;
+    list-style-type: none;
+    @media (max-width: 485px) {
+      flex: 0 0 51%;
+    }
+  }
+  &__link {
+    overflow: hidden;
+    position: relative;
+    width: 19rem;
+    height: 19rem;
+    display: block;
+    border-radius: 2rem;
+  }
+  &__img {
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    width: 19rem;
+    height: 19rem;
+  }
+}

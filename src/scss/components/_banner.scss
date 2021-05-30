@@ -1,7 +1,8 @@
 .section-banner {
-  border-bottom: 0.1rem solid #2F2E2E;
+  border-bottom: 0.1rem solid #2f2e2e;
   position: relative;
   overflow: hidden;
+  background-image: url(../../img/banner.png);
   &__img {
     position: absolute;
     right: 0;
@@ -10,19 +11,28 @@
   }
 }
 .banner {
+  margin: 0 auto;
   max-width: 56.2rem;
   padding-top: 12.2rem;
   padding-bottom: 20.3rem;
-  background-color: $black;
+  //  background-color: $black;
   box-shadow: 100px 0px 100px #000;
+  @media (max-width: 510px) {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
   &__title {
-    font-family: 'Marcellus', serif;
+    font-family: "Marcellus", serif;
     font-size: 8rem;
     line-height: 7.5rem;
     color: $white;
+    @media (max-width: 530px) {
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
   }
   &__text {
-    color: #C2C2C2;
+    color: #c2c2c2;
     font-size: 1.8rem;
     line-height: 1.6;
   }
@@ -31,7 +41,6 @@
     margin-bottom: 2.9rem;
     &__year {
       margin-right: 1.8rem;
-      
     }
     &__age {
       margin-right: 1.8rem;
@@ -40,7 +49,7 @@
       display: inline-block;
       text-align: center;
       &::before {
-        content: '';
+        content: "";
         display: block;
         width: 100%;
         height: 2.4rem;
@@ -59,13 +68,13 @@
     &__rating {
       position: relative;
       &::after {
-        content: '';
+        content: "";
         display: block;
         width: 1.6rem;
         height: 1.6rem;
         margin-left: 1rem;
         position: absolute;
-        top: calc(50% - .8rem);
+        top: calc(50% - 0.8rem);
         right: -2.6rem;
         background-image: url(img/star.svg);
       }
@@ -73,11 +82,17 @@
   }
   &-control {
     margin-top: 3.1rem;
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 395px) {
+      flex-direction: column;
+    }
+
     &__btn {
       border: none;
       border-radius: 10rem;
       padding: 1.5rem 3rem;
-      font-family: 'Mulish', sans-serif;
+      font-family: "Mulish", sans-serif;
       font-weight: 800;
     }
     &__btn-main {
@@ -89,32 +104,34 @@
       padding-left: 6rem;
       cursor: pointer;
       box-shadow: 0px 4px 50px rgba($bg-gradient-safe, 0.5);
-      transition: .2s ease box-shadow;
+      transition: 0.2s ease box-shadow;
+      @media (max-width: 395px) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
       &:hover {
         box-shadow: 0px 0px 0px rgba($bg-gradient-safe, 0.5);
       }
-      &::after{
-        content: '';
+      &::after {
+        content: "";
         display: block;
         width: 1.4rem;
         height: 1.8rem;
         background-image: url(img/play.svg);
         position: absolute;
-        left: 3rem;   
+        left: 3rem;
         top: calc(50% - 0.9rem);
       }
     }
     &__btn-more {
       background-color: $white;
       color: #323232;
-      transition: .2s ease background-color, .2s ease color;
+      transition: 0.2s ease background-color, 0.2s ease color;
       cursor: pointer;
       &:hover {
         color: $white;
         background-color: transparent;
       }
-
     }
   }
-
 }

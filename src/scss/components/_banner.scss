@@ -2,7 +2,6 @@
   border-bottom: 0.1rem solid #2f2e2e;
   position: relative;
   overflow: hidden;
-  background-image: url(../../img/banner.png);
   &__img {
     position: absolute;
     right: 0;
@@ -11,16 +10,36 @@
   }
 }
 .banner {
-  margin: 0 auto;
-  max-width: 56.2rem;
-  padding-top: 12.2rem;
-  padding-bottom: 20.3rem;
-  //  background-color: $black;
-  box-shadow: 100px 0px 100px #000;
+  max-width: 562px;
+  width: 50%;
+  height: 100%;
+  background-color: #000;
+  box-shadow: 100px 0 100px #000;
+  position: relative;
+  
   @media (max-width: 510px) {
     padding-top: .5rem;
     padding-bottom: .5rem;
   }
+  @media (max-width: 768px) {
+    width: 100%;
+    background: 0 0;
+    box-shadow: none;
+    background: -o-linear-gradient(rgba(0,0,0,.5)),url(img/banner.png);
+  } 
+  @media (max-width: 991px) {
+    max-width: 350px;
+  }
+  &__inner {
+    background: url(img/banner.png) no-repeat;
+    background-position: right;
+    height: 690px;
+    border-radius: 20px;
+    @media (max-width: 768px) {
+    background-position: center;
+    }
+  }
+  
   &__title {
     font-family: "Marcellus", serif;
     font-size: 8rem;
